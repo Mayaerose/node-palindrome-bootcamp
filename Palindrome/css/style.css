@@ -1,0 +1,80 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* The picture covers the whole page */
+body{
+  min-height: 100vh;
+  display: flex;                 /* these 3 lines center the box */
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/images/mirror.png');
+  background-size: cover;        /* stretch the picture to fill the screen */
+  background-position: center;
+  font-family: Georgia, serif;
+  color: white;
+}
+
+/* The see-through box in the middle of the page */
+.box{
+  width: 90%;
+  max-width: 480px;
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.65);   /* black, 65% solid */
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+h1{
+  font-size: 3rem;
+  font-style: italic;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.question{
+  margin-bottom: 20px;
+  color: #c9c9c9;
+}
+
+.info{
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #c9c9c9;
+  border-radius: 6px;
+}
+
+.maya{
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: black;
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* changes color when the mouse is on the button */
+.maya:hover{
+  background-color: #ffffff;
+}
+
+#result{
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-style: italic;
+}
